@@ -21,10 +21,10 @@
     <img id="main" alt="" src="./images/colour-bars.png" style="display:none;">
     
     <script type="text/javascript">
-        require('jQuery', 'Edgecase', function() {
+        require('jQuery', 'EdgecaseJQ', function() {
             var scaleable, ctrl, visible;
             
-            scaleable = new Edgecase.Concrete('#main');
+            scaleable = new EdgecaseJQ.Concrete('#main');
             
             if (console && typeof console.log === 'function') {
                 scaleable.on('load', function() {

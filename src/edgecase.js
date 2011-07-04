@@ -1,4 +1,4 @@
-Edgecase = new JS.Module('Edgecase', {
+EdgecaseJQ = new JS.Module('EdgecaseJQ', {
     include: JS.Observable,
     
     _visible: true,
@@ -123,7 +123,7 @@ Edgecase = new JS.Module('Edgecase', {
  * to allow our jQuery port of Edgecase to mimic the original in this respect
  * without these enhancements.
  */
-Edgecase.include({
+EdgecaseJQ.include({
     on: function(eventName, callback, scope) {
         var chain = new JS.MethodChain;
         if (callback && typeof callback != 'function') scope = callback;
@@ -154,8 +154,8 @@ Edgecase.include({
     }
 });
 
-Edgecase.Concrete = new JS.Class('Edgecase.Concrete', {
-    include: Edgecase,
+EdgecaseJQ.Concrete = new JS.Class('EdgecaseJQ.Concrete', {
+    include: EdgecaseJQ,
     
     initialize: function(image, options) {
         var ratio, html, x, y;

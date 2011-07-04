@@ -23,5 +23,5 @@ packages:
       uses:
         - jQuery
       provides:
-        - Edgecase
-        - Edgecase.Concrete
+        - EdgecaseJQ
+        - EdgecaseJQ.Concrete
